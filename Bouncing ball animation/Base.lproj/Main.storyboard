@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bouncing_ball_animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-8p-HsP">
+                                <rect key="frame" x="228" y="731" width="139" height="30"/>
+                                <state key="normal" title="Start Animation TTB"/>
+                                <connections>
+                                    <action selector="stop_animation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYx-A1-CfD"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="755957ca0e8d95bb1d4e9ac2c8083de9.png" translatesAutoresizingMaskIntoConstraints="NO" id="uTO-3P-aFM">
+                                <rect key="frame" x="145" y="387" width="125" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="Uuz-Fy-qFH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypQ-g3-nAR">
+                                <rect key="frame" x="36" y="731" width="136" height="30"/>
+                                <state key="normal" title="Start Animation LTR"/>
+                                <connections>
+                                    <action selector="start_animation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ruM-BR-Pxn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vov-Dc-2Sc">
+                                <rect key="frame" x="36" y="794" width="138" height="30"/>
+                                <state key="normal" title="Start Animation RTL"/>
+                                <connections>
+                                    <action selector="RTL" destination="BYZ-38-t0r" eventType="touchUpInside" id="sI9-3J-yFo"/>
+                                    <action selector="RTL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMM-WU-o1a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCn-SB-zdO">
+                                <rect key="frame" x="228" y="794" width="139" height="30"/>
+                                <state key="normal" title="Start Animation BTT"/>
+                                <connections>
+                                    <action selector="BTT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuB-QR-jUW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Animator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1x-2x-9sA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="39"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypQ-g3-nAR" firstAttribute="baseline" secondItem="3KU-8p-HsP" secondAttribute="baseline" id="5Z8-ZZ-uf2"/>
+                            <constraint firstItem="ypQ-g3-nAR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="98a-E5-dMX"/>
+                            <constraint firstItem="ypQ-g3-nAR" firstAttribute="leading" secondItem="vov-Dc-2Sc" secondAttribute="leading" id="DI3-VO-FbX"/>
+                            <constraint firstItem="vov-Dc-2Sc" firstAttribute="baseline" secondItem="UCn-SB-zdO" secondAttribute="baseline" id="RCM-MX-70b"/>
+                            <constraint firstItem="uTO-3P-aFM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TvE-Gf-LPQ"/>
+                            <constraint firstItem="3KU-8p-HsP" firstAttribute="leading" secondItem="UCn-SB-zdO" secondAttribute="leading" id="hzv-RA-zxa"/>
+                            <constraint firstItem="uTO-3P-aFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="i7a-37-ogz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vov-Dc-2Sc" secondAttribute="bottom" constant="38" id="jHz-QX-gLG"/>
+                            <constraint firstItem="UCn-SB-zdO" firstAttribute="leading" secondItem="vov-Dc-2Sc" secondAttribute="trailing" constant="54" id="kBA-EC-qUA"/>
+                            <constraint firstItem="vov-Dc-2Sc" firstAttribute="top" secondItem="ypQ-g3-nAR" secondAttribute="bottom" constant="33" id="wD7-K2-ZX7"/>
+                            <constraint firstItem="uTO-3P-aFM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ykh-73-j0g"/>
+                            <constraint firstItem="uTO-3P-aFM" firstAttribute="centerX" secondItem="h1x-2x-9sA" secondAttribute="centerX" id="zv5-TS-70h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4NW-cA-lX4"/>
+                    <connections>
+                        <outlet property="BTT" destination="UCn-SB-zdO" id="SBW-ye-i0I"/>
+                        <outlet property="RTL" destination="vov-Dc-2Sc" id="tCw-vT-Fb3"/>
+                        <outlet property="iv" destination="uTO-3P-aFM" id="fdW-xF-UdN"/>
+                        <outlet property="start" destination="ypQ-g3-nAR" id="Hl8-sV-HvK"/>
+                        <outlet property="stop" destination="3KU-8p-HsP" id="PGT-wL-uu2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520.28985507246375" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="755957ca0e8d95bb1d4e9ac2c8083de9.png" width="1000" height="1000"/>
+    </resources>
+</document>
